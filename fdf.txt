@@ -1,0 +1,16 @@
+
+  FINVMST    IF   E           K DISK
+
+  D wkCorp          S                   like(CORPNO) inz('100')
+  D wkInvoice       S             10
+
+  C     klist1        klist
+  C                   kfld                    wkCorp
+  C                   kfld                    wkInvoice
+
+  C                   eval      wkInvoice = 'I035552120'
+  C     klist1        chain     INVMSTR
+  C                   if        (%found)
+  C                   endif
+
+  C                   eval      *inlr = *on
